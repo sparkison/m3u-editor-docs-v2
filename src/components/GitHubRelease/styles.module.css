@@ -1,0 +1,63 @@
+.releaseCard {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(71, 85, 105, 0.3);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.releaseCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.15);
+  background: rgba(30, 41, 59, 0.9);
+}
+
+.releaseCard h3 {
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-primary);
+  font-size: 1.25rem;
+}
+
+.releaseInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.version {
+  font-size: 1.1rem;
+  color: #f1f5f9;
+}
+
+.version strong {
+  color: var(--ifm-color-primary-light);
+}
+
+.date {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.description {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+.links {
+  margin-top: 0.5rem;
+}
+
+.link {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--ifm-color-primary-light);
+  text-decoration: underline;
+}

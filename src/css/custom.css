@@ -1,0 +1,109 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Brand colors taken from the logo gradient: pink -> purple -> indigo */
+  --ifm-color-primary: #6366f1; /* indigo */
+  --ifm-color-primary-dark: #5b4ee0;
+  --ifm-color-primary-darker: #513fc0;
+  --ifm-color-primary-darkest: #3b2b89;
+  --ifm-color-primary-light: #7b6ff8;
+  --ifm-color-primary-lighter: #927ffc;
+  --ifm-color-primary-lightest: #bfa6ff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(101, 76, 175, 0.06);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #6366f1;
+  --ifm-color-primary-dark: #5b4ee0;
+  --ifm-color-primary-darker: #513fc0;
+  --ifm-color-primary-darkest: #3b2b89;
+  --ifm-color-primary-light: #7b6ff8;
+  --ifm-color-primary-lighter: #927ffc;
+  --ifm-color-primary-lightest: #bfa6ff;
+  --docusaurus-highlighted-code-line-bg: rgba(101, 76, 175, 0.06);
+}
+/* Home page styles */
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3.5rem 1rem;
+  background: linear-gradient(135deg, #f7fff9 0%, #eefaf1 100%);
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+.home-hero .home-logo {
+  width: 160px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(34, 50, 36, 0.08);
+}
+.home-hero .hero-title {
+  font-size: 2.25rem;
+  margin: 1rem 0 0.25rem 0;
+  color: var(--ifm-color-primary-dark);
+}
+.home-hero .hero-subtitle {
+  font-size: 1.125rem;
+  color: #475569;
+  max-width: 760px;
+  margin: 0.5rem 0 1rem 0;
+}
+.home-hero .hero-cta { margin-top: 1rem; }
+
+.home-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+.home-feature {
+  background: #ffffff;
+  border: 1px solid rgba(34, 50, 36, 0.06);
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(34, 50, 36, 0.04);
+}
+.home-feature h3 { margin-top: 0; color: var(--ifm-color-primary-dark); }
+.home-feature p { color: #475569; }
+
+@media (min-width: 768px) {
+  .home-hero { padding: 4.5rem 1.5rem; }
+  .home-hero .hero-title { font-size: 2.75rem; }
+}
+
+/* Custom footer styling to match site theme */
+.footer {
+  background: rgba(15, 23, 42, 0.98);
+  border-top: 2px solid var(--ifm-color-primary);
+  color: #e2e8f0;
+}
+
+.footer__title {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.footer__link-item {
+  color: #cbd5e1;
+  transition: color 0.2s ease;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary-light);
+}
+
+.footer__copyright {
+  color: #94a3b8;
+  border-top: 1px solid rgba(71, 85, 105, 0.3);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
