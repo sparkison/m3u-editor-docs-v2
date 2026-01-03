@@ -260,6 +260,6 @@ depends_on:
 
 ***
 
-:::info Disclaimer
+:::danger Disclaimer
 M3U Editor is an independent, open‑source playlist manager — not an IPTV provider. We don’t host channels or partner with streaming services; please only use content you’re authorized to access.
 :::

@@ -12,7 +12,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c 'docusaurus start'",
+    "dev": "docusaurus start",
     "generate-screenshots": "node ./scripts/generate-screenshots.js",
     "watch-screenshots": "node ./scripts/generate-screenshots.js --watch",
     "prestart": "npm run generate-screenshots",
