@@ -2,45 +2,135 @@
 description: Documentation home for m3u-editor
 tags:
   - Getting Started
-title: About
+title: Welcome
 sidebar_position: 0
 ---
 
 <div style={{ textAlign: 'center', padding: '0 0 2rem 0' }}>
-  <img src="/img/logo.png" alt="M3U Editor logo" style={{ width: '220px', maxWidth: '10%' }} />
+  <img src="/img/logo.png" alt="M3U Editor logo" style={{ width: '220px', maxWidth: '100%' }} />
 </div>
 
-:::tip We are currently in the process of moving our documentation to this platform.
+# Welcome to M3U Editor
 
-:::
+**M3U Editor** is a full-featured, open-source IPTV playlist manager with advanced features similar to **xteve** or **threadfin**.
 
-**Welcome** to the official documentation for **M3U Editor** — a lightweight tool for creating and managing M3U playlists.
+This documentation provides comprehensive guides, examples, and reference material to help you get the most out of M3U Editor.
 
-This documentation provides step-by-step guides, practical examples, and reference material to help you.
+## What is M3U Editor?
 
-## What is M3U-Editor?
+M3U Editor is a self-hosted web application for managing M3U playlists and IPTV streams. Created by **[sparkison](https://github.com/sparkison)**, it offers a modern, responsive interface for importing, editing, and serving your media streams.
 
-**M3U Editor** is an open‑source, self‑hosted M3U playlist manager by **[sparkison](https://github.com/sparkison)**. It provides a clean, responsive web UI for importing, editing and organizing IPTV M3U playlists, optional EPG (XMLTV) integration, proxy restreaming, HDHR support, and easy deployment via Docker.
+**Key capabilities:**
+- Full M3U/M3U8/M3U+ and Xtream Codes API support
+- Complete EPG (Electronic Program Guide) management
+- Xtream API output for client compatibility
+- Series management with .strm file support
+- Post-processing with webhooks and custom scripts
+- Built-in stream player with EPG integration
 
-## 🧩Feature list
+## 🎯 Key Features
 
-Below is a list of some of the features available in M3U Editor:
+### Stream Management
+- **Multiple Import Methods** — M3U files, URLs, and Xtream Codes API
+- **Channel Organization** — Categorize, number, and customize channels
+- **Auto-Merge Channels** — Automatically deduplicate and create failovers
+- **Failover Streams** — Automatic failover for reliability
+- **Bulk Operations** — Manage hundreds of channels efficiently
 
-* **Stream Collection & Management** — Import, organize, and serve IPTV streams with zero hassle.
-* **EPG Integration** — Manage Electronic Program Guides like a pro.
-* **M3U Import & Restreaming via internal Proxy (optional)** — Make playlists work your way.
-* **Clean, Responsive UI** — Modern, intuitive, and built to get out of your way.
-* **Self-hosted freedom** — Total control in your hands.
-* **HDHR support** — Easily connect to your favorite clients, like Plex, Emby, JellyFin and more.
+### EPG Integration
+- **XMLTV Support** — Local files and remote URLs
+- **Schedules Direct** — Full SD integration
+- **EPG Caching** — Optimized performance for large EPG files
+- **Smart Mapping** — Automatic and manual EPG channel mapping
+- **EPG Preview** — Built-in TV guide with playback
 
-## 📋Prerequisites
+### Streaming & Output
+- **M3U Proxy** — Restream with hardware acceleration
+- **Xtream API** — Full Xtream-compatible API output
+- **HDHR Support** — Connect with Plex, Emby, Jellyfin
+- **HLS Support** — HTTP Live Streaming output
+- **Custom Outputs** — Multiple playlist configurations
 
-* Docker installed on your system.
-* Xtream codes API login info or M3U URLs/files containing an M3U playlist of video streams.
-* (Optionally) EPG URLs/files containing valid XMLTV data.
+### Advanced Features
+- **Series Management** — VOD organization with .strm files
+- **Post Processing** — Webhooks, scripts, and email notifications
+- **Redis Caching** — Stream pooling and performance
+- **Queue System** — Background job processing
+- **API Access** — RESTful API for automation
 
-***
+## 📋 Prerequisites
+
+To run M3U Editor, you need:
+
+- **Docker** installed on your system
+- **M3U sources**: Xtream credentials or M3U URLs/files
+- **(Optional)** EPG data: XMLTV URLs/files or Schedules Direct account
+
+## 🚀 Quick Start
+
+Get up and running in minutes:
+
+```bash
+# Download recommended configuration
+curl -O https://raw.githubusercontent.com/sparkison/m3u-editor/main/docker-compose.proxy.yml
+
+# Start services
+docker-compose -f docker-compose.proxy.yml up -d
+
+# Access at http://localhost:36400
+```
+
+See [Installation](/docs/getting-started/installation) for detailed setup instructions.
+
+## 📖 Documentation Sections
+
+### 🎓 Getting Started
+New to M3U Editor? Start here:
+- [Installation](/docs/getting-started/installation)
+- [Configuration](/docs/getting-started/configuration)
+- [Adding Playlists](/docs/getting-started/adding-playlists)
+- [EPG Setup](/docs/getting-started/epg-setup)
+
+### 🚀 Deployment
+Production deployment guides:
+- [Docker Compose](/docs/deployment/docker-compose)
+- [M3U Proxy Setup](/docs/deployment/m3u-proxy-integration)
+- [Caddy vs Nginx](/docs/deployment/caddy-vs-nginx)
+
+### ⚡ Advanced Topics
+Deep dives into advanced features:
+- [Auto-Merge Channels](/docs/advanced/auto-merge-channels)
+- [EPG Optimization](/docs/advanced/epg-optimization)
+
+### 💬 Community & Support
+Get help and contribute:
+- [Discord Server](https://discord.gg/rS3abJ5dz7)
+- [Report Issues](https://github.com/sparkison/m3u-editor/issues)
+- [GitHub Repository](https://github.com/sparkison/m3u-editor)
+
+## 📸 Screenshots
+
+![Channel editing](/img/screenshots/channel-editing.png)
+*Channel editor with full customization options*
+
+![EPG preview](/img/screenshots/in-app-playlist-epg-preview.png)
+*Built-in EPG preview with program guide*
+
+![Proxy monitoring](/img/screenshots/proxy-monitor.png)
+*Real-time proxy statistics and monitoring*
+
+## ⚖️ License
+
+M3U Editor is licensed under **CC BY-NC-SA 4.0**:
+
+- **BY** (Attribution): Credit the original author
+- **NC** (Non-Commercial): No commercial use
+- **SA** (Share Alike): Derivatives must use same license
+
+For full details, see [Creative Commons License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+---
 
 :::info Disclaimer
-M3U Editor is an independent, open‑source playlist manager — not an IPTV provider. We don’t host channels or partner with streaming services; please only use content you’re authorized to access.
+M3U Editor is an independent, open-source playlist manager — **not an IPTV provider**. We don't host channels or partner with streaming services. Please only use content you're authorized to access.
 :::

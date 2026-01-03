@@ -20,15 +20,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://sparkison.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/m3u-editor-docs-v2/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'sparkison', // Usually your GitHub org/user name.
-  projectName: 'm3u-editor', // Usually your repo name.
+  projectName: 'm3u-editor-docs-v2', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -48,9 +48,8 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           breadcrumbs: false,
-           showLastUpdateTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          showLastUpdateTime: true,
+          editUrl: 'https://github.com/sparkison/m3u-editor-docs-v2/edit/main/',
         },
         blog: false,
         theme: {
@@ -102,8 +101,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Getting Started',
+                to: '/docs/getting-started/installation',
+              },
+              {
+                label: 'Deployment',
+                to: '/docs/deployment/docker-compose',
+              },
+              {
+                label: 'Advanced Topics',
+                to: '/docs/advanced/auto-merge-channels',
               },
             ],
           },
@@ -114,19 +121,31 @@ const config = {
                 label: 'Discord',
                 href: 'https://discord.gg/rS3abJ5dz7',
               },
+              {
+                label: 'GitHub Discussions',
+                href: 'https://github.com/sparkison/m3u-editor/discussions',
+              },
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
+                label: 'GitHub (Main Project)',
                 href: 'https://github.com/sparkison/m3u-editor',
+              },
+              {
+                label: 'GitHub (Docs)',
+                href: 'https://github.com/sparkison/m3u-editor-docs-v2',
+              },
+              {
+                label: 'Report Issues',
+                href: 'https://github.com/sparkison/m3u-editor/issues',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} M3U Editor. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} M3U Editor. Licensed under CC BY-NC-SA 4.0. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Quick Started
 ---
 
 <div style={{ textAlign: 'center', padding: '0 0 2rem 0' }}>
