@@ -290,6 +290,6 @@ CLEANUP_INTERVAL=120
 
 ## Next Steps
 
-- [HLS Storage Configuration](/docs/deployment/hls-storage) - Optimize segment storage
-- [Docker Compose Deployments](/docs/deployment/docker-compose) - Other deployment options
-- [Monitoring](/docs/advanced/monitoring) - Advanced monitoring setup
+- [Docker Compose Deployments](/docs/Deployment/docker-compose) - Other deployment options
+- [Caddy vs Nginx](/docs/Deployment/caddy-vs-nginx) - Reverse proxy options
+- [EPG Optimization](/docs/Advanced/epg-optimization) - Performance tuning

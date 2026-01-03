@@ -92,9 +92,9 @@ Once your containers are running:
 
 ## Next Steps
 
-- [Configuration Guide](/docs/getting-started/configuration) - Configure M3U Editor for your needs
-- [Adding Playlists](/docs/getting-started/adding-playlists) - Import your first M3U playlist
-- [EPG Setup](/docs/getting-started/epg-setup) - Add Electronic Program Guide data
+- [Configuration Guide](/docs/configuration) - Configure M3U Editor for your needs
+- [Adding Playlists](/docs/Resources/adding-playlists) - Import your first M3U playlist
+- [EPG Setup](/docs/Resources/epg-setup) - Add Electronic Program Guide data
 
 ## Need Help?
 

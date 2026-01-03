@@ -278,6 +278,6 @@ For existing Nginx users or complex setups, stick with **Nginx** for its:
 
 ## Next Steps
 
-- [External Services Setup](/docs/deployment/external-services) - Complete external deployment
-- [Docker Compose Deployments](/docs/deployment/docker-compose) - All deployment options
-- [SSL/HTTPS Setup](/docs/deployment/ssl-setup) - Secure your deployment
+- [Docker Compose Deployments](/docs/Deployment/docker-compose) - All deployment options
+- [M3U Proxy Integration](/docs/Deployment/m3u-proxy-integration) - External proxy setup
+- [Configuration Guide](/docs/configuration) - Environment variables and settings

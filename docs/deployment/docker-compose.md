@@ -191,6 +191,6 @@ Change ports by setting environment variables in your `.env` file.
 
 ## Next Steps
 
-- [M3U Proxy Integration](/docs/deployment/m3u-proxy-integration) - Detailed proxy setup
-- [External Services](/docs/deployment/external-services) - Full external setup guide
-- [Caddy vs Nginx](/docs/deployment/caddy-vs-nginx) - Choose your reverse proxy
+- [M3U Proxy Integration](/docs/Deployment/m3u-proxy-integration) - Detailed proxy setup
+- [Caddy vs Nginx](/docs/Deployment/caddy-vs-nginx) - Choose your reverse proxy
+- [Configuration Guide](/docs/configuration) - Configure environment variables

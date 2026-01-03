@@ -316,6 +316,6 @@ tail -f storage/logs/laravel.log
 
 ## Next Steps
 
-- [EPG Setup](/docs/getting-started/epg-setup) - Initial EPG configuration
-- [Stream Player](/docs/features/stream-player) - Use EPG with player
-- [Playlist Output](/docs/features/playlist-output) - Generate EPG output
+- [EPG Setup](/docs/Resources/epg-setup) - Initial EPG configuration
+- [Auto-Merge Channels](/docs/Advanced/auto-merge-channels) - Automatic channel management
+- [M3U Proxy Integration](/docs/Deployment/m3u-proxy-integration) - External proxy setup

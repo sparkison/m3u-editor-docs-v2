@@ -261,6 +261,6 @@ dispatch(new MergeChannels(
 
 ## Next Steps
 
-- [Channel Management](/docs/features/channel-management) - Editing channels
-- [Failover Streams](/docs/features/failover-streams) - Manual failover setup
-- [Playlist Output](/docs/features/playlist-output) - Export merged playlists
+- [EPG Setup](/docs/Resources/epg-setup) - Configure Electronic Program Guide
+- [EPG Optimization](/docs/Advanced/epg-optimization) - Performance tuning
+- [Docker Compose Deployments](/docs/Deployment/docker-compose) - Deploy to production
