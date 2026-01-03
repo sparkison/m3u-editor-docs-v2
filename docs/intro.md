@@ -141,6 +141,6 @@ For full details, see [Creative Commons License](https://creativecommons.org/lic
 
 ---
 
-:::info Disclaimer
+:::danger Disclaimer
 M3U Editor is an independent, open-source playlist manager — **not an IPTV provider**. We don't host channels or partner with streaming services. Please only use content you're authorized to access.
 :::
