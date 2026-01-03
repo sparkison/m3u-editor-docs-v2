@@ -120,13 +120,13 @@ Get help and contribute:
 
 ## 📸 Screenshots
 
-![Channel editing](/img/screenshots/channel-editing.png)
+![Channel editing](/img/screenshots/06_channel-editing.png)
 *Channel editor with full customization options*
 
-![EPG preview](/img/screenshots/in-app-playlist-epg-preview.png)
+![EPG preview](/img/screenshots/03_in-app-playlist-epg-preview.png)
 *Built-in EPG preview with program guide*
 
-![Proxy monitoring](/img/screenshots/proxy-monitor.png)
+![Proxy monitoring](/img/screenshots/10_proxy-monitor.png)
 *Real-time proxy statistics and monitoring*
 
 ## ⚖️ License

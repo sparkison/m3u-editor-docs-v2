@@ -3,48 +3,47 @@
 
 export default [
   {
-    "src": "/img/screenshots/m3u-editor_dashboard.png",
-    "alt": "Dashboard - Overview and statistics"
+    "src": "/img/screenshots/01_m3u-editor_dashboard.png",
+    "alt": "01 M3u Editor Dashboard"
   },
   {
-    "src": "/img/screenshots/m3u-editor_playlists.png",
-    "alt": "Playlists - Manage multiple playlists"
+    "src": "/img/screenshots/02_m3u-editor_playlists.png",
+    "alt": "02 M3u Editor Playlists"
   },
   {
-    "src": "/img/screenshots/in-app-playlist-epg-preview.png",
-    "alt": "EPG Preview - Built-in TV guide"
+    "src": "/img/screenshots/03_in-app-playlist-epg-preview.png",
+    "alt": "03 In App Playlist Epg Preview"
   },
   {
-    "src": "/img/screenshots/in-app-playlist-epg-playback.png",
-    "alt": "EPG with Playback - Stream player integration"
+    "src": "/img/screenshots/04_in-app-playlist-epg-playback.png",
+    "alt": "04 In App Playlist Epg Playback"
   },
   {
-    "src": "/img/screenshots/in-app-epg-preview.png",
-    "alt": "EPG Preview - Program guide interface"
+    "src": "/img/screenshots/05_in-app-epg-preview.png",
+    "alt": "05 In App Epg Preview"
   },
   {
-    "src": "/img/screenshots/channel-editing.png",
-    "alt": "Channel Editor - Full customization options"
-  },
-
-  {
-    "src": "/img/screenshots/series-mgmt.png",
-    "alt": "Series Management - VOD organization"
+    "src": "/img/screenshots/06_channel-editing.png",
+    "alt": "06 Channel Editing"
   },
   {
-    "src": "/img/screenshots/proxy-monitor.png",
-    "alt": "Proxy Monitor - Real-time statistics"
+    "src": "/img/screenshots/07_series-mgmt.png",
+    "alt": "07 Series Mgmt"
   },
   {
-    "src": "/img/screenshots/post-processing.png",
-    "alt": "Post Processing - Webhooks and scripts"
+    "src": "/img/screenshots/08_post-processing.png",
+    "alt": "08 Post Processing"
   },
   {
-    "src": "/img/screenshots/proxy-config.png",
-    "alt": "Proxy Configuration - M3U Proxy settings"
+    "src": "/img/screenshots/09_proxy-config.png",
+    "alt": "09 Proxy Config"
   },
   {
-    "src": "/img/screenshots/api.png",
-    "alt": "API Documentation - Xtream API output"
+    "src": "/img/screenshots/10_proxy-monitor.png",
+    "alt": "10 Proxy Monitor"
   },
+  {
+    "src": "/img/screenshots/99__api.png",
+    "alt": "99 Api"
+  }
 ];
