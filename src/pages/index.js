@@ -22,9 +22,9 @@ export default function Home() {
             <DownloadBadge />
           </div>
           <div className={styles.buttons}>
-            <Link className="button button--primary button--lg" to="/docs/intro">Quick Start</Link>
+            <Link className="button button--primary button--lg" to="/docs/quick_start">Quick Start</Link>
             <Link className="button button--secondary button--lg" to="/docs/intro" style={{marginLeft: 12}}>Documentation</Link>
-            <a className="button button--secondary button--lg" href="https://github.com/sparkison/m3u-editor" style={{marginLeft: 12}}>GitHub</a>
+            <a className="button button--secondary button--lg" href="https://github.com/sparkison/m3u-editor" target="_blank" style={{marginLeft: 12}}>GitHub</a>
           </div>
         </div>
       </header>
