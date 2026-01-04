@@ -3,6 +3,6 @@
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "External integrations for the M3U-Editor."
+    "description": "Integrate media servers (Emby, Jellyfin) to import and serve VOD and series alongside IPTV sources — proxy streams, sync libraries, and expose a compatible Xtream Codes API. Planned integrations include Plex, local media hosting (HTTP web servers), and local volume media support."
   }
 }
