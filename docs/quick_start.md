@@ -107,7 +107,6 @@ services:
     restart: unless-stopped
     ports:
       - "${APP_PORT:-36400}:${APP_PORT:-36400}"  # Main application port
-      - "${XTREAM_PORT:-36401}:${XTREAM_PORT:-36401}"  # Xtream API endpoint (when XTREAM_ONLY_ENABLED=true)
       # - "${PG_PORT:-5432}:${PG_PORT:-5432}"  # Uncomment to expose PostgreSQL
     networks:
       - m3u-network
