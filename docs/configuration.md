@@ -68,13 +68,26 @@ DB_PASSWORD=your-secure-password
 
 ### Redis Configuration
 
+M3U Editor uses Redis for caching and queue management. Both embedded and external Redis are supported.
+
 #### Embedded Redis (Default)
 
 ```bash
 REDIS_ENABLED=true
-REDIS_SERVER_PORT=6379
 REDIS_HOST=localhost
+REDIS_SERVER_PORT=6379
+REDIS_PASSWORD=changeme  # Automatically set to M3U_PROXY_TOKEN if not provided
 ```
+
+:::info Automatic Configuration
+**Embedded Redis**: If `REDIS_PASSWORD` is not set, it's automatically configured to match `M3U_PROXY_TOKEN`. This ensures the proxy and Redis credentials stay synchronized.
+
+**Custom Password** (optional):
+```bash
+# Set a custom password (must match across all services)
+REDIS_PASSWORD=$(openssl rand -hex 32)
+```
+:::
 
 #### External Redis
 
@@ -82,7 +95,37 @@ REDIS_HOST=localhost
 REDIS_ENABLED=false
 REDIS_HOST=your-redis-host
 REDIS_SERVER_PORT=6379
+REDIS_PASSWORD=your-redis-password  # REQUIRED: Must match your Redis requirepass
 ```
+
+:::danger External Redis Password Required
+When using external Redis, you **MUST** explicitly set `REDIS_PASSWORD` to match your Redis instance's `requirepass` configuration.
+
+**Important**: The automatic password setting only works with embedded Redis. External Redis connections will fail if passwords don't match.
+:::
+
+#### Testing Redis Connection
+
+```bash
+# From m3u-editor container
+docker exec -it m3u-editor php artisan tinker
+>>> Redis::ping();
+# Should return: "+PONG"
+
+# Direct Redis connection
+docker exec -it redis redis-cli -a your-password ping
+# Should return: PONG
+```
+
+#### Common Redis Issues
+
+**Error: "NOAUTH Authentication required"**
+- **Cause**: Redis requires password but `REDIS_PASSWORD` not set
+- **Solution**: Set `REDIS_PASSWORD` environment variable matching your Redis password
+
+**Error: "ERR invalid password"**
+- **Cause**: Mismatch between Redis `requirepass` and `REDIS_PASSWORD`
+- **Solution**: Ensure passwords match in both Redis and m3u-editor configuration
 
 ## M3U Proxy Configuration
 
