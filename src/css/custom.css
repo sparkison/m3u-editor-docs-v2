@@ -28,6 +28,88 @@
   --ifm-color-primary-lighter: #927ffc;
   --ifm-color-primary-lightest: #bfa6ff;
   --docusaurus-highlighted-code-line-bg: rgba(101, 76, 175, 0.06);
+
+  /* Search Plugin - Dark Theme */
+  --search-local-modal-background: #1e293b;
+  --search-local-modal-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  --search-local-modal-width: 600px;
+  --search-local-modal-width-sm: 90vw;
+  --search-local-spacing: 16px;
+  --search-local-hit-background: #2d3748;
+  --search-local-hit-shadow: none;
+  --search-local-hit-color: #e2e8f0;
+  --search-local-hit-height: 64px;
+  --search-local-highlight-color: #927ffc;
+  --search-local-muted-color: #94a3b8;
+  --search-local-icon-stroke-width: 1.6;
+  --search-local-hit-active-color: #ffffff;
+}
+
+/* Search bar positioning and styling */
+.navbar__search {
+  margin-right: 0.5rem;
+  order: 99;
+}
+
+.navbar__search-input {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #e2e8f0 !important;
+  padding: 0.4rem 2.5rem 0.4rem 2.5rem !important;
+  border-radius: 8px !important;
+  font-size: 0.9rem !important;
+  width: 200px !important;
+  transition: all 0.2s ease !important;
+}
+
+.navbar__search-input:hover {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.navbar__search-input:focus {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: var(--ifm-color-primary) !important;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2) !important;
+  width: 240px !important;
+}
+
+.navbar__search-input::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Search icon */
+.navbar__search .search-icon {
+  color: #94a3b8 !important;
+}
+
+/* Search modal overlay */
+[data-theme='dark'] .DocSearch-Modal {
+  background-color: var(--search-local-modal-background) !important;
+  box-shadow: var(--search-local-modal-shadow) !important;
+}
+
+/* Search result items */
+[data-theme='dark'] .aa-Item[aria-selected='true'] {
+  background-color: rgba(99, 102, 241, 0.2) !important;
+}
+
+[data-theme='dark'] .aa-ItemContent mark {
+  color: var(--search-local-highlight-color) !important;
+  background: transparent !important;
+  font-weight: 600;
+}
+
+/* Mobile responsive */
+@media (max-width: 996px) {
+  .navbar__search-input {
+    width: 0 !important;
+    padding: 0.4rem 2rem !important;
+  }
+  
+  .navbar__search-input:focus {
+    width: 180px !important;
+  }
 }
 /* Home page styles */
 .home-hero {
