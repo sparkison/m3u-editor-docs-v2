@@ -10,15 +10,10 @@ tags:
  
 ---
 
-<div style={{ textAlign: 'center', padding: '0 0 2rem 0' }}>
-  <img src="/img/logo.png" alt="M3U Editor logo" style={{ width: '220px', maxWidth: '10%' }} />
-</div>
-
-
 # Media Server Integration Settings
   This document describes several configuration options that exist for media server integrations.
 
-## ⚡ Media Server Action Menu
+### Media Server Action Menu
 The media server integration contains various actionable items depicted below
  
  ![Media Server Intergrations Action Menu](/img/doc_imgs/media_server_integration_action_menu.png)

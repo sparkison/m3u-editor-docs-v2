@@ -12,11 +12,6 @@ tags:
   - Coming Soon
 ---
 
-<div style={{ textAlign: 'center', padding: '0 0 2rem 0' }}>
-  <img src="/img/logo.png" alt="M3U Editor logo" style={{ width: '220px', maxWidth: '10%' }} />
-</div>
-
-
 # Roadmap
 
 Below is a list of features that are currently in development or that are planned.
