@@ -103,9 +103,4 @@ Popular Android IPTV client supporting both Xtream API and M3U.
 5. (Optional) Add EPG URL: `http://YOUR_M3U_EDITOR_IP:36400/{playlist-uuid}/epg.xml`
 6. Click **Save**
 
-***
-
-:::danger Disclaimer
-M3U-Editor is an independent, open‑source playlist manager — not an IPTV provider. We don’t host channels or partner with streaming services; please only use content you’re authorized to access.
-:::
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 description: Understanding and using Playlist Aliases in M3U Editor
 tags:
   - Resources

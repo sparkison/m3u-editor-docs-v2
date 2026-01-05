@@ -61,16 +61,14 @@ const config = {
 
   themes: [
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      ({
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
         hashed: true,
-        language: ["en"],
+        language: ['en'],
         highlightSearchTermsOnTargetPage: true,
-        explicitSearchResultPath: true,
-        docsRouteBasePath: '/docs',
-        indexBlog: false,
-      }),
+        searchResultLimits: 8,
+        searchResultContextMaxLength: 50,
+      },
     ],
   ],
 

@@ -7,6 +7,7 @@ tags:
   - Integrations
   - Emby
   - Jellyfin
+  - Experimental
  
 ---
 
@@ -47,12 +48,4 @@ You will need to make sure you have your url for your Emby Server. This can be i
 
 :::tip
 Your media server should not be displayed under the Media Servers integrations
-:::
-
-![Media Server Integration List](/img/doc_imgs/media_server_integration_server_list.png)
-   
----
-
-:::danger Disclaimer
-M3U Editor is an independent, open-source playlist manager — **not an IPTV provider**. We don't host channels or partner with streaming services. Please only use content you're authorized to access.
 :::

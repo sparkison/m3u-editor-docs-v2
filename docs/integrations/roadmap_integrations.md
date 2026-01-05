@@ -24,9 +24,3 @@ As of 1/3/2025 -- Integrations are currently only deployed in the **experimental
 - [ ] Emby\Jellyfin user imports.
 - [ ] Basic Plex integration.
 - [ ] Local media integration.
-
----
-
-:::danger Disclaimer
-M3U Editor is an independent, open-source playlist manager — **not an IPTV provider**. We don't host channels or partner with streaming services. Please only use content you're authorized to access.
-:::

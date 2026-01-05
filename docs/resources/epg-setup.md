@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 description: Set up Electronic Program Guide (EPG) data
 tags:
   - Getting Started

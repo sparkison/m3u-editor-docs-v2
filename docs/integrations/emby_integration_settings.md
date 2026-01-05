@@ -7,6 +7,7 @@ tags:
   - Integrations
   - Emby
   - Jellyfin
+  - Experimental
  
 ---
 
@@ -78,8 +79,18 @@ There are **two options** when it comes to genre handling:
 
 1. Primary **Use only the first genre**. Prevents duplication by placing an item in a single group/category. **Recommended for most situations**.
 2. All **Use all genres**. Items store all genres and **may appear in multiple groups/categories, which increases duplicates, storage, and sync time**.
----
 
-:::danger Disclaimer
-M3U Editor is an independent, open-source playlist manager — **not an IPTV provider**. We don't host channels or partner with streaming services. Please only use content you're authorized to access.
-:::
+  ![Media server integration genre settings](/img/doc_imgs/media_server_integration_genre_options.png)
+
+## 🗓️ Sync Schedule
+
+Configures synchronization schedule with the integrated media server. The following are the support sync intervals:
+
+* 1 hour
+* 3 hours
+* 6 hours
+* 12 hours
+* Dailly (Midnight)
+* Weekly (Sunday)
+
+![Media server integration sync schedule](/img/doc_imgs/media_server_integration_sync_schedule.png)

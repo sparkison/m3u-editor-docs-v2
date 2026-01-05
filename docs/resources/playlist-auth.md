@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 description: Configure authentication for playlist access
 tags:
   - Resources
