@@ -47,7 +47,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          breadcrumbs: false,
+          breadcrumbs: true,
           showLastUpdateTime: true,
           editUrl: 'https://github.com/sparkison/m3u-editor-docs-v2/tree/master',
         },
