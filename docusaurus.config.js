@@ -78,7 +78,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
-        defaultMode: null, // Default to user's system preference
+        // defaultMode: 'dark', // Default to user's system preference
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
