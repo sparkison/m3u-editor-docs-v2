@@ -262,5 +262,5 @@ dispatch(new MergeChannels(
 ## Next Steps
 
 - [EPG Setup](/docs/resources/epg-setup) - Configure Electronic Program Guide
-- [EPG Optimization](/docs/advanced/epg-optimization) - Performance tuning
+- [EPG Cache Overview](/docs/advanced/epg-optimization) - Performance tuning
 - [Docker Compose Deployments](/docs/deployment/docker-compose) - Deploy to production

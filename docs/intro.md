@@ -110,7 +110,7 @@ Production deployment guides:
 ### ⚡ Advanced Topics
 Deep dives into advanced features:
 - [Auto-Merge Channels](/docs/advanced/auto-merge-channels)
-- [EPG Optimization](/docs/advanced/epg-optimization)
+- [EPG Cache Overview](/docs/advanced/epg-optimization)
 
 ### 💬 Community & Support
 Get help and contribute:
