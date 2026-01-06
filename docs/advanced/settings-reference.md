@@ -1,4 +1,4 @@
----
+
 sidebar_position: 4
 description: Complete Settings page reference for M3U Editor
 tags:
@@ -6,7 +6,7 @@ tags:
   - Configuration
   - Admin
 title: Settings Reference
----
+
 
 # Settings Reference
 
@@ -39,7 +39,7 @@ Complete guide to all settings available in the M3U Editor Settings page (admin-
 - **Default**: XL
 - **Description**: Maximum content width for better readability on large screens
 
----
+
 
 ## 🔄 Proxy Tab
 
@@ -87,7 +87,7 @@ Complete guide to all settings available in the M3U Editor Settings page (admin-
 
 **Manage Profiles**: Link to Stream Profiles page
 
----
+
 
 ## 🔗 Integrations Tab
 
@@ -131,7 +131,7 @@ Complete guide to all settings available in the M3U Editor Settings page (admin-
 - **Default**: 40
 - **Description**: Max TMDB API requests per second
 
----
+
 
 ## 📺 Streams Tab
 
@@ -186,7 +186,7 @@ Same options as Series, but for VOD channels:
 - **Examples**: `"DE • "`, `"EN |"`, `"4K-"`
 - **Description**: Remove specific patterns from folder/file names
 
----
+
 
 ## 💾 Backups Tab
 
@@ -214,7 +214,7 @@ Same options as Series, but for VOD channels:
 - **Default**: Disabled
 - **Description**: Include EPG and Playlist files (increases backup size)
 
----
+
 
 ## 🔔 Notifications Tab
 
@@ -245,7 +245,7 @@ Configure email notifications for:
 - Backup created
 - Errors and failures
 
----
+
 
 ## 🖥️ System Tab
 
@@ -276,7 +276,7 @@ Configure email notifications for:
 - **Button**: Opens `/docs/api` in new tab
 - **Access**: Admin only
 
----
+
 
 ## 🔧 Utility Buttons
 
@@ -301,7 +301,7 @@ Configure email notifications for:
 - Freeing disk space
 - Testing logo changes
 
----
+
 
 ## 💡 Tips & Best Practices
 
