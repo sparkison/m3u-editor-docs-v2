@@ -51,7 +51,40 @@
   order: 99;
 }
 
-.navbar__search-input {
+/* Light mode search input */
+[data-theme='light'] .navbar__search-input {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  color: #1e293b !important;
+  padding: 0.4rem 2.5rem 0.4rem 2.5rem !important;
+  border-radius: 8px !important;
+  font-size: 0.9rem !important;
+  width: 200px !important;
+  transition: all 0.2s ease !important;
+}
+
+[data-theme='light'] .navbar__search-input:hover {
+  background-color: rgba(0, 0, 0, 0.06) !important;
+  border-color: rgba(0, 0, 0, 0.18) !important;
+}
+
+[data-theme='light'] .navbar__search-input:focus {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: var(--ifm-color-primary) !important;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2) !important;
+  width: 240px !important;
+}
+
+[data-theme='light'] .navbar__search-input::placeholder {
+  color: #64748b !important;
+}
+
+[data-theme='light'] .navbar__search .search-icon {
+  color: #64748b !important;
+}
+
+/* Dark mode search input */
+[data-theme='dark'] .navbar__search-input {
   background-color: rgba(255, 255, 255, 0.08) !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
   color: #e2e8f0 !important;
@@ -62,24 +95,23 @@
   transition: all 0.2s ease !important;
 }
 
-.navbar__search-input:hover {
+[data-theme='dark'] .navbar__search-input:hover {
   background-color: rgba(255, 255, 255, 0.12) !important;
   border-color: rgba(255, 255, 255, 0.25) !important;
 }
 
-.navbar__search-input:focus {
+[data-theme='dark'] .navbar__search-input:focus {
   background-color: rgba(255, 255, 255, 0.15) !important;
   border-color: var(--ifm-color-primary) !important;
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2) !important;
   width: 240px !important;
 }
 
-.navbar__search-input::placeholder {
+[data-theme='dark'] .navbar__search-input::placeholder {
   color: #94a3b8 !important;
 }
 
-/* Search icon */
-.navbar__search .search-icon {
+[data-theme='dark'] .navbar__search .search-icon {
   color: #94a3b8 !important;
 }
 
