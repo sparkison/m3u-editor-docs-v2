@@ -28,7 +28,17 @@ Before you begin, ensure you have:
 
 M3U Editor offers several deployment options to fit your needs:
 
-### ⭐ Recommended: Modular Deployment
+#### 🐳 Docker compose file reference
+
+| Use Case                    | File                                                    | Description                                                                                            |
+| --------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Modular Deployment**      | [docker-compose.proxy.yml](./installation#-recommended-modular-deployment)         | ⭐⭐ Recommended! Separate containers for **m3u-editor**, **m3u-proxy** (_the external proxy setup is required for hardware acceleration_), and **Redis** — perfect if you want more granular control (_Postgres and NGINX can be easily added as a seperate container as well_). |
+| **All-in-One Deployment**   | [docker-compose.aio.yml](./installation#simple-all-in-one-deployment) | A simple, all-in-one solution — everything runs in a single container for quick setup (_hardware acceleration is not supported in this setup_).  |
+| **Modular + VPN** | [docker-compose.proxy-vpn](./installation#advanced-modular-with-vpn) | Example of modular deployment using Gluetun VPN.          |
+
+<small>For more examples, see the [Deployments](./deployment/docker-compose.md) page</small>
+
+### ⭐⭐ Recommended: Modular Deployment
 
 **File**: `docker-compose.proxy.yml`
 
@@ -102,6 +112,6 @@ Once your containers are running:
 
 ## Need Help?
 
-- � Join our [Discord](https://discord.gg/rS3abJ5dz7)
-- 🐛 [Report an issue](https://github.com/sparkison/m3u-editor/issues/new?template=bug_report.md)
-- 📖 [GitHub Discussions](https://github.com/sparkison/m3u-editor/discussions)
+- Join our [Discord](https://discord.gg/rS3abJ5dz7)
+- [Report an issue](https://github.com/sparkison/m3u-editor/issues/new?template=bug_report.md)
+- [GitHub Discussions](https://github.com/sparkison/m3u-editor/discussions)

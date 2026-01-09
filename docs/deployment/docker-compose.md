@@ -16,7 +16,7 @@ M3U Editor offers multiple Docker Compose configurations to fit different use ca
 
 | Use Case | File | Description |
 |----------|------|-------------|
-| **⭐ Recommended** | `docker-compose.proxy.yml` | Modular setup with separate containers for m3u-editor, m3u-proxy, and Redis |
+| **⭐⭐ Recommended** | `docker-compose.proxy.yml` | Modular setup with separate containers for m3u-editor, m3u-proxy, and Redis |
 | **Simple** | `docker-compose.aio.yml` | All-in-one container for quick testing |
 | **VPN** | `docker-compose.proxy-vpn.yml` | Modular deployment with Gluetun VPN |
 | **Advanced** | `docker-compose.external-all.yml` | Fully modular with external Nginx |

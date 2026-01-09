@@ -91,7 +91,7 @@
 
 .featuresHeading {
   text-align: center;
-  color: #f1f5f9;
+  color: var(--ifm-font-color-base);
   margin-bottom: 2rem;
   font-size: 2rem;
 }
@@ -117,7 +117,7 @@
 }
 
 .featureCard h3 { margin-top: 0; color: var(--ifm-color-primary); }
-.featureCard p { color: #cbd5e1; }
+.featureCard p { color: var(--ifm-color-emphasis-700); }
 
 .featureIcon {
   font-size: 3.2rem;
@@ -224,7 +224,7 @@
 
 .screenshotsHeading {
   text-align: center;
-  color: #f1f5f9;
+  color: var(--ifm-font-color-base);
   margin-bottom: 2rem;
   font-size: 2rem;
 }

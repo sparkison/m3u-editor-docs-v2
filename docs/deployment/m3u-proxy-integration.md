@@ -292,4 +292,4 @@ CLEANUP_INTERVAL=120
 
 - [Docker Compose Deployments](/docs/deployment/docker-compose) - Other deployment options
 - [Caddy vs Nginx](/docs/deployment/caddy-vs-nginx) - Reverse proxy options
-- [EPG Optimization](/docs/advanced/epg-optimization) - Performance tuning
+- [EPG Cache Overview](/docs/advanced/epg-optimization) - Performance tuning

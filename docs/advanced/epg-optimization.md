@@ -5,10 +5,10 @@ tags:
   - Advanced
   - EPG
   - Performance
-title: EPG Optimization
+title: EPG Cache Overview
 ---
 
-# EPG Optimization
+# EPG Cache Overview
 
 M3U Editor includes comprehensive EPG caching for dramatically improved performance with large EPG files.
 

@@ -47,9 +47,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          breadcrumbs: false,
+          breadcrumbs: true,
           showLastUpdateTime: true,
-          editUrl: 'https://github.com/sparkison/m3u-editor-docs-v2/edit/main/',
+          editUrl: 'https://github.com/sparkison/m3u-editor-docs-v2/tree/master',
         },
         blog: false,
         theme: {
@@ -78,9 +78,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: true,
-        respectPrefersColorScheme: false,
+        // defaultMode: 'dark', // Default to user's system preference
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
       navbar: {
         title: 'M3U Editor',
@@ -123,7 +123,7 @@ const config = {
               },
               {
                 label: 'Advanced Topics',
-                to: '/docs/advanced/auto-merge-channels',
+                to: '/docs/category/advanced',
               },
             ],
           },
@@ -148,8 +148,16 @@ const config = {
                 href: 'https://github.com/sparkison/m3u-editor',
               },
               {
+                label: 'GitHub (Proxy)',
+                href: 'https://github.com/sparkison/m3u-proxy',
+              },
+              {
                 label: 'GitHub (Docs)',
                 href: 'https://github.com/sparkison/m3u-editor-docs-v2',
+              },
+              {
+                label: 'Issue Tracker',
+                href: 'https://github.com/users/sparkison/projects/2/views/1',
               },
               {
                 label: 'Report Issues',

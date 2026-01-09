@@ -15,7 +15,6 @@ title: .strm Files Guide
 
 Learn how to use M3U Editor's .strm file generation to integrate your IPTV content with Plex, Jellyfin, Emby, and other media servers.
 
----
 
 ## 🎯 What are .strm Files?
 
@@ -34,7 +33,7 @@ http://your-ip:36400/stream/episode/12345
 ✅ **Automatic library updates** when content changes  
 ✅ **Compatible** with existing media server workflows  
 
----
+
 
 ## 🚀 Quick Start
 
@@ -65,7 +64,7 @@ http://your-ip:36400/stream/episode/12345
 3. Set library type (TV Shows or Movies)
 4. Scan library
 
----
+
 
 ## ⚙️ Configuration Options
 
@@ -121,7 +120,7 @@ Category + Title:
 /Movies/Action/Movie Title/Movie Title (2024).strm
 ```
 
----
+
 
 ## 📝 Filename Metadata
 
@@ -154,7 +153,7 @@ Customize what appears in the filename for better media server recognition:
 /Movies/Action/The Matrix (1999) {tmdb-603}.strm
 ```
 
----
+
 
 ## 🔧 Advanced Settings
 
@@ -188,7 +187,7 @@ Remove unwanted text from folder/file names:
 
 **Use Case**: Cleaning up provider-added prefixes/suffixes
 
----
+
 
 ## 🎬 Media Server Setup
 
@@ -258,7 +257,7 @@ Remove unwanted text from folder/file names:
 4. Configure metadata providers (TMDB, TheTVDB)
 5. **Save**
 
----
+
 
 ## 📂 Sync Location Requirements
 
@@ -303,7 +302,7 @@ chown -R 1000:1000 /path/to/media/Series
 chmod -R 777 /path/to/media/Series
 ```
 
----
+
 
 ## 🔄 Syncing Process
 
@@ -339,7 +338,7 @@ docker exec -it m3u-editor php artisan app:sync-series-strm-files
 docker exec -it m3u-editor php artisan app:sync-vod-strm-files
 ```
 
----
+
 
 ## 🎨 Filename Examples
 
@@ -387,7 +386,7 @@ docker exec -it m3u-editor php artisan app:sync-vod-strm-files
 /Movies/Sci-Fi/The Matrix/The Matrix (1999) [tmdb-603].strm
 ```
 
----
+
 
 ## 🔍 Troubleshooting
 
@@ -437,7 +436,7 @@ cat /path/to/media/Series/Show/S01E01.strm
 2. Or manually sync Series/VOD
 3. Trigger media server library scan
 
----
+
 
 ## 💡 Best Practices
 
@@ -477,7 +476,7 @@ cat /path/to/media/Series/Show/S01E01.strm
 - Similar to Plex settings
 - Square brackets work well
 
----
+
 
 ## 🔗 Stream URLs
 
@@ -507,7 +506,7 @@ http://your-ip:36400/stream/episode/12345?proxy=false
 http://your-ip:36400/stream/episode/12345?proxy=true
 ```
 
----
+
 
 ## 📊 Monitoring
 
@@ -527,7 +526,7 @@ find /path/to/media/Series -name "*.strm" | wc -l
 find /path/to/media/Series -name "*.strm" -mtime -1
 ```
 
----
+
 
 ## 🆘 Getting Help
 

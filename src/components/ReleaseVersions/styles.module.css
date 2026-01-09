@@ -4,7 +4,7 @@
 
 .versionsContainer h2 {
   text-align: center;
-  color: #f1f5f9;
+  color: var(--ifm-font-color-base);
   margin-bottom: 2rem;
   font-size: 2rem;
 }
@@ -78,12 +78,12 @@
 .versionNumber {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #f1f5f9;
+  color: var(--ifm-font-color-base);
   margin-bottom: 0.75rem;
 }
 
 .description {
-  color: #cbd5e1;
+  color: var(--ifm-color-emphasis-700);
   line-height: 1.5;
   margin-bottom: 1.25rem;
   font-size: 0.95rem;

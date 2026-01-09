@@ -77,7 +77,7 @@ View the program guide:
 4. Click on any program to see details
 5. (Optional) Click play to test the stream
 
-## EPG Optimization
+## EPG Cache Overview
 
 For large EPG files, M3U Editor includes caching:
 
@@ -116,6 +116,6 @@ For very large EPG files:
 
 ## Next Steps
 
-- [EPG Optimization](/docs/advanced/epg-optimization) - Performance tuning for large EPG files
+- [EPG Cache Overview](/docs/advanced/epg-optimization) - EPG caching and optimization overview
 - [Auto-Merge Channels](/docs/advanced/auto-merge-channels) - Automatic channel management
 - [Docker Compose Deployments](/docs/deployment/docker-compose) - Deploy to production
