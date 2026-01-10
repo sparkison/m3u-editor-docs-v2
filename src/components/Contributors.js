@@ -103,29 +103,32 @@ export default function Contributors() {
                     Thank you to all the amazing people who have contributed to the M3U Editor project! 🙌
                 </p>
                 <div className={styles.contributorsGrid}>
-                    {contributors.map((contributor) => (
-                        <a
-                            key={contributor.login}
-                            href={contributor.html_url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={styles.contributorCard}
-                            title={`${contributor.login} - ${contributor.contributions} contributions`}
-                        >
-                            <img
-                                src={contributor.avatar_url}
-                                alt={contributor.login}
-                                className={styles.avatar}
-                                loading="lazy"
-                            />
-                            <div className={styles.contributorInfo}>
-                                <div className={styles.username}>{contributor.login}</div>
-                                <div className={styles.contributions}>
-                                    {contributor.contributions} {contributor.contributions === 1 ? 'contribution' : 'contributions'}
+                    {contributors.map((contributor) => {
+                        const isMinorContributor = contributor.contributions < 5;
+                        return (
+                            <a
+                                key={contributor.login}
+                                href={contributor.html_url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`${styles.contributorCard} ${isMinorContributor ? styles.minorContributor : ''}`}
+                                title={`${contributor.login} - ${contributor.contributions} contributions`}
+                            >
+                                <img
+                                    src={contributor.avatar_url}
+                                    alt={contributor.login}
+                                    className={styles.avatar}
+                                    loading="lazy"
+                                />
+                                <div className={styles.contributorInfo}>
+                                    <div className={styles.username}>{contributor.login}</div>
+                                    <div className={styles.contributions}>
+                                        {contributor.contributions} {contributor.contributions === 1 ? 'contribution' : 'contributions'}
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    ))}
+                            </a>
+                        );
+                    })}
                 </div>
                 <p className={styles.footer}>
                     Contributors are fetched from the{' '}

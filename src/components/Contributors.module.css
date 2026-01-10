@@ -1,6 +1,13 @@
 .contributorsSection {
   padding: 4rem 0;
-  background: var(--ifm-background-surface-color);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ensure content appears above grid and pixels */
+.contributorsSection .container {
+  position: relative;
+  z-index: 10;
 }
 
 .heading {
@@ -12,6 +19,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  filter: drop-shadow(0 0 20px rgba(244, 63, 94, 0.3));
 }
 
 .subtitle {
@@ -97,6 +105,25 @@
 
 .contributorCard:hover .avatar {
   border-color: var(--ifm-color-primary);
+}
+
+/* Smaller styling for minor contributors (< 5 contributions) */
+.minorContributor {
+  padding: 1rem 0.75rem;
+}
+
+.minorContributor .avatar {
+  width: 50px;
+  height: 50px;
+  border-width: 2px;
+}
+
+.minorContributor .username {
+  font-size: 0.875rem;
+}
+
+.minorContributor .contributions {
+  font-size: 0.75rem;
 }
 
 .contributorInfo {

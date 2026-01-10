@@ -23,32 +23,48 @@
 /* Lightbox overlay */
 .lightboxOverlay {
   position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: rgba(15,23,42,0.92);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
   animation: fadeIn 0.25s;
+  cursor: pointer;
 }
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { 
+    opacity: 0;
+    background: rgba(0, 0, 0, 0);
+  }
+  to { 
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.85);
+  }
 }
 .lightboxImg {
   max-width: 92vw;
   max-height: 88vh;
   border-radius: 14px;
-  box-shadow: 0 8px 48px rgba(0,0,0,0.4);
+  position: relative;
+  z-index: 100000;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.6);
   background: #18181b;
   animation: zoomIn 0.22s cubic-bezier(.4,0,.2,1);
+  cursor: default;
 }
 @keyframes zoomIn {
   from { transform: scale(0.85); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
 .lightboxClose {
-  position: absolute;
+  position: fixed;
   top: 1.2rem;
   right: 1.5rem;
   background: rgba(30,41,59,0.85);
@@ -59,6 +75,7 @@
   width: 54px;
   height: 54px;
   cursor: pointer;
+  z-index: 100001;
   box-shadow: 0 2px 12px rgba(0,0,0,0.22);
   transition: background 0.2s;
   display: flex;

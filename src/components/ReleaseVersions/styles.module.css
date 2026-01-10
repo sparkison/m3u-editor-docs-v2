@@ -11,6 +11,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  filter: drop-shadow(0 0 20px rgba(244, 63, 94, 0.3));
 }
 
 .versionsGrid {

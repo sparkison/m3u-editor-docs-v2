@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
 import 'swiper/css';
@@ -17,6 +18,18 @@ export default function ScreenshotsCarousel() {
   useEffect(() => {
     setVisibleScreenshots(screenshots || []);
   }, [screenshots]);
+
+  useEffect(() => {
+    // Prevent body scroll when lightbox is open
+    if (lightbox.open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [lightbox.open]);
 
   const openLightbox = (src, alt) => setLightbox({ open: true, src, alt });
   const closeLightbox = () => setLightbox({ open: false, src: '', alt: '' });
@@ -63,11 +76,12 @@ export default function ScreenshotsCarousel() {
       ) : (
         <div style={{ padding: '2rem 1rem', textAlign: 'center', color: '#cbd5e1' }}>No screenshots available.</div>
       )}
-      {lightbox.open && (
+      {lightbox.open && createPortal(
         <div className={styles.lightboxOverlay} onClick={closeLightbox} role="dialog" aria-modal="true">
           <button className={styles.lightboxClose} onClick={closeLightbox} aria-label="Close">&times;</button>
           <img src={lightbox.src} alt={lightbox.alt} className={styles.lightboxImg} />
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
