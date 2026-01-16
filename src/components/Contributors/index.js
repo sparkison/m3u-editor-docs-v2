@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from './Contributors.module.css';
+import styles from './styles.module.css';
 
 const REPOS = [
     'sparkison/m3u-editor',
