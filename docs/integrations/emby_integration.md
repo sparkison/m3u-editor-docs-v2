@@ -13,7 +13,7 @@ tags:
 # Emby Integration
 
 :::note Read Me First
-These instructions assume you have a working Emby or Jellyfin Media serverv
+These instructions assume you have a working Emby or Jellyfin Media server
 :::
 
 You will need to make sure you have your url for your Emby Server. This can be in the form of an IP address or FQDN (DNS). To facilitate the integration, you will also need to generate or use an existing Emby API key.
