@@ -5,7 +5,7 @@ tags:
   - Resources
   - Playlists
   - Advanced
-  - Experimental
+
 title: Pooled Provider Profiles
 ---
 

@@ -17,6 +17,6 @@ tags:
 Below is a list of features that are currently in development or that are planned.
 
 - [x] Initial Emby and Jellyfin integration
-- [x] Basic Plex integration (**experimental** branche only currently)
+- [x] Basic Plex integration (**experimental** branch only currently)
 - [ ] Emby\Jellyfin user imports.
 - [ ] Local media integration.
